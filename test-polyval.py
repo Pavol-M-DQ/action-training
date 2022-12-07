@@ -1,3 +1,6 @@
+import polyval
+import pytest
+
 test_polynomials = (
     [5, 2, 1],
     [1, 0]
@@ -18,5 +21,5 @@ def test_eval_poly(poly, expected):
     """
     res = []
     for x in test_x:
-        res.append(business.problem_solver.eval_poly(poly, x))
+        res.append(polyval.eval_poly(poly, x))
     assert res == expected
